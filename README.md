@@ -1,10 +1,10 @@
 # Odysseus - Network Tracking Tool
 
-Description:
+## Description
 
   Odysseus is a tool designed to automatically scan, and track servers on a home network, allowing an easier solution for loading webGUI's, as well as providing rudimentary server monitoring through RWHO. Screenshots can be found at: http://imgur.com/a/xHjbG
   
-Status:
+## Status
   
    This project is still under heavy development, the current distribution is mostly stable, however it is still case sensitive, and doesnt provide much error reporting
    
@@ -22,7 +22,7 @@ Status:
    - Basic server monitoring, simply install RWHOD on servers to monitor, and RWHO on host server to enable monitoring
    - Thumbnail uploading (follow thumbnail naming convention)
    
-Roadmap:
+## Roadmap
 
    - [x] Fix host redirects
    - [x] Allow services to appear on multiple ports
@@ -33,12 +33,12 @@ Roadmap:
    - [x] Specify thumbnail by server > service
    - [x] Add thumbnail upload
    
-Requirements:
+## Requirements
 
     - Basic use of Odysseus requires nodeJs for the webserver. All node modules are installed using npm install
     - Server monitoring requires the installation of RWHO on the server, but is not required for use of Odysseus
    
-Install:
+## Install
 
    - Download repository
      `git clone https://github.com/aidancrowther/Odysseus`
@@ -55,7 +55,7 @@ Install:
       - Setup monitoring by installing RWHO on server `sudo apt-get install rwho`, and RWHOD on clients `sudo apt-get install rwhod`
       - Add thumbnails to the images folder to add more flair to links based on their service, name thumbnails `[service].png`
       
-Usage:
+## Usage
 
    After getting your server running you can access the webpage by connecting to your hosts ip adress on the port you specified (default 80). The home page will show hosts that have been found on your network, and should be blank on first connection. Navigate to the settings page in order to setup the scanner, setting descriptions are as follows:
    
@@ -78,11 +78,11 @@ If you now navigate to the home page you should see a number of buttons with lab
 
 The monitoring page allows you to keep track of your servers name, status, uptime, number of users, and cpu load averages. These stats are found using the ruptime command, requiring the rwho package on the host, and rwhod on each server to be monitored. If your host does not have this package monitoring will be disabled. Upon enabling monitoring, or navigating to the monitoring page once it has been enabled you will be presented with the server stats in a table format.
       
-Problems:
+## Problems
 
    Please feel free to notify me of any issues you encounter, and I will fix them as soon as possible. I am open to any suggestions or requests, and will work to make the program as functional as possible
    
-Thank You:
+## Thank You
 
    Special Thanks to [eviltik/evilscan](https://github.com/eviltik/evilscan) for writing the port scanner that is the basis of this project, and to [emimontesdeoca/jordgubbe](https://github.com/emimontesdeoca/jordgubbe) and [AlessandroBerone/Pi-Home](https://github.com/AlessandroBerrone/Pi-Home) for the inspiration for this project!
     
